@@ -152,7 +152,7 @@ def get_friends(twitter, screen_name):
     params={'screen_name':screen_name ,'count':5000}
     responseofRequest=robust_request(twitter, resource, params, max_tries=5)
     friend_ids=[r for r in responseofRequest]
-    return friend_ids  
+    return sorted(friend_ids)  
     pass
 
 
@@ -267,12 +267,12 @@ def friend_overlap(users):
                     counter2=counter2+1
                 counter1=counter1+1                              
             
-            list1= [users[y]['screen_name'],users[x]['screen_name'],min_counter]        
+            list1= (users[y]['screen_name'],users[x]['screen_name'],min_counter)        
             list2.append(list1)            
             x=x+1
         y=y+1   
-    
-    return sorted(list2, key=lambda x:(x[2], x[0]),reverse=True)  
+    list2=sorted(list2, key=lambda x:(x[0],x[1]))
+    return sorted(list2, key=lambda x:(x[2]),reverse=True)  
     pass
 
 
