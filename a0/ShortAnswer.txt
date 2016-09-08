@@ -9,7 +9,8 @@ Trump.
 How is this approach misleading? How might you fix it?
 
 Ans:- 
-This approach is misleading because if you check number of people followed by Jill Stein and Gary Johnson  are 4155 and 3123 respectively where Hillary Clinton and Donald Trump  follows 748 and 42 people respectively. As Jill Stein and Gary Johnson follows more people there will be more overlap of friends between them which cannot quantify that they are more similar.  
+	This approach is misleading because if you check number of people followed by Jill Stein and Gary Johnson  are 4155 and 3123 respectively where 
+Hillary Clinton and Donald Trump  follows 748 and 42 people respectively. As Jill Stein and Gary Johnson follows more people there will be more overlap of friends between them which cannot quantify that they are more similar.  
 
 1) This problem can be solved by using Jaccard index. Jaccard index can be used for comparing similarity of sample test data.
 Formula: -   J(X, Y) = |X Intersection Y| / |X Union Y |
@@ -17,7 +18,9 @@ Formula: -   J(X, Y) = |X Intersection Y| / |X Union Y |
 
 Another way
 
-2) To fix this we have to calculate percentage of common friends between Jill Stein, Gary Johnson  and Hillary Clinton ,Donald Trump . Then we have to subtract there percentage (Jill Stein -Gary Johnson  ) say x and (Hillary Clinton - Donald Trump) say y. Then we can compare these two differences. Lesser the difference more similar they are.
+2) To fix this we have to calculate percentage of common friends between Jill Stein, Gary Johnson  and Hillary Clinton ,Donald Trump . 
+Then we have to subtract there percentage (Jill Stein -Gary Johnson  ) say x and (Hillary Clinton - Donald Trump) say y. 
+Then we can compare these two differences. Lesser the difference more similar they are.
 Example:-  
 Note:- Calculations as per latest data 
 
@@ -42,8 +45,7 @@ who are rivals? Do some web searches to see if you can find out more
 information.
 
 Ans:- 
-
-Magic Johnson is famous basketball player and many people know him. Magic Johnson is a supporter of the Democratic Party and Hillary Clinton is its nominee for presidential campaign He has also hosted a fundraiser for Hillary Clinton's presidential campaign on August 22, 2016. As magic Johnson is supported of Democratic Party and Hillary Clinton is its nominee for 2016 presidential election hence Hillary Clinton follows magic Johnson. 
+	Magic Johnson is famous basketball player and many people know him. Magic Johnson is a supporter of the Democratic Party and Hillary Clinton is its nominee for presidential campaign He has also hosted a fundraiser for Hillary Clinton's presidential campaign on August 22, 2016. As magic Johnson is supported of Democratic Party and Hillary Clinton is its nominee for 2016 presidential election hence Hillary Clinton follows magic Johnson. 
 Magic Johnson loves trump hotels and he is good friends of Donald trump that is the reason trump follow him on twitter as this will help him to get attention from public and can get more votes in presidential election.
 
 
@@ -52,7 +54,9 @@ Johnson follows over 3K accounts, while Donald Trump follows less than
 50). Why do you think this is? How might that affect our analysis?
 
 Ans:-
-Gary Earl Johnson is an American businessman, author, politician, and the Libertarian Party nominee for President of the United States in the 2016 election and Donald Trump is the Republican Party nominee for President of the United States in the 2016 election. As Donald Trump is famous personality he does not follow more people while Gary Earl Johnson is not as famous as Donald Trump hence follows more people to get attention from public. 
+	Gary Earl Johnson is an American businessman, author, politician, and the Libertarian Party nominee for President of the United States in the 2016 election 
+and Donald Trump is the Republican Party nominee for President of the United States in the 2016 election. As Donald Trump is famous personality he does not 
+follow more people while Gary Earl Johnson is not as famous as Donald Trump hence follows more people to get attention from public. 
      	This will affect our analysis as we are calculating how often each friend is followed as Gary Earl Johnson follows more people there will be more common friends between them and friend_overlap() will return more overlapping friends with other candidates as he follows more people.
 
 
